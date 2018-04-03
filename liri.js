@@ -53,4 +53,8 @@ if (process.argv[3] && process.argv[2] === "spotify-this-song") {
 fs.appendFile('log.txt', 'Command: ' + command + ', Input: ' + input + '\n');
 
 // function that runs spotify-this-song. Change to switch, if using multiple functions.
-spotifyIt(input); 
+if (command === 'spotify-this-song') {
+	spotifyIt(input); 
+} else {
+	console.log('Please use the command "spotify-this-song" followed by a song title.')
+}
