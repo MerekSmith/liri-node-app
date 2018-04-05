@@ -93,6 +93,7 @@ function Random() {
 		command = commandArray[0];
 		input = commandArray[1];
 		console.log('random array', commandArray)
+// 		TODO: remove above console.log, put a function around the switch below, then have this Random() run the switch function which will then take into account whatever is in the random.txt file.
 	});
 };
 
