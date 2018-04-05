@@ -46,7 +46,7 @@ function myTweets(userName) {
 		if (error) {
 			return console.log('Error: ' + error);
 		}
-
+		console.log('-------Tweets for user name: ' + tweets[0].user.screen_name + '-------');
 		for (let i = 0; i < tweets.length; i++) {
 			console.log('Tweet ' + i + ' :' + tweets[i].text);
 			console.log('Created: ' + tweets[i].created_at);
@@ -134,25 +134,36 @@ function twitterInput() {
 };
 
 // Logs each command to a log.txt file and creates a new line for each command.
-fs.appendFile('log.txt', 'Command: ' + command + ', Input: ' + input + '\n');
+function logInput(input) {
+
+	fs.appendFile('log.txt', 'Command: ' + command + ', Input: ' + input + '\n');
+}
 
 // Switch function to check the command provided to then run the correct function and input.
 switch (command) {
 	case 'spotify-this-song':
 		spotifyInput()
 		spotifyIt(input);
+		logInput(input)
 		break;
 	case 'my-tweets':
 		twitterInput();
 		myTweets(input);
+		logInput(input)
 		break;
 	case 'movie-this':
 		movieInput();
 		movieThis(input);
+		logInput(input)
 		break;
 	case 'do-what-it-says':
 		Random();
+		logInput(input)
 		break;
 	default:
-		console.log('Please use the command "spotify-this-song" followed by a song title.');
+		console.log('Please use the command options below:')
+		console.log('"spotify-this-song" <song name>');
+		console.log('"movie-this" <movie title>');
+		console.log('"my-tweets" <option: user name>');
+		console.log('"do-what-it-says"');
 };

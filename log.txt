@@ -1,0 +1,16 @@
+Command: my-tweets, Input: 
+Command: my-tweets, Input: 
+Command: my-tweets, Input: 
+Command: my-tweets, Input: 
+Command: my-tweets, Input: 
+Command: my-tweets, Input: 
+Command: my-tweets, Input: 
+Command: mytweets, Input: 
+Command: mytweets, Input: 
+Command: my-tweets, Input: 
+Command: movie-this, Input: 
+Command: spotify-this-song, Input: 
+Command: my-tweets, Input: undefined
+Command: movie-this, Input: die+hard+with+a+vengeance
+Command: spotify-this-song, Input:  mind over matter
+Command: do-what-it-says, Input: 
