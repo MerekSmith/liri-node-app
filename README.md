@@ -19,7 +19,8 @@ This function will provide back the last 20 tweets and their creation times for 
 
 ## 4 - 'do-what-it-says' 
 This function will pull text from the random.txt file and run the first command and input provided. 
-	
+
+![do-what-it-says_command](https://user-images.githubusercontent.com/29190130/38401960-19dba3f6-3916-11e8-90c2-41cdcab7e221.PNG)
 
 ## Log Command and Input
 The Liri app will also log each command and input the user provides into a log.txt file.
