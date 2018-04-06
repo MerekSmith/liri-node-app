@@ -92,8 +92,7 @@ function Random() {
 		var commandArray = data.split(',');
 		command = commandArray[0];
 		input = commandArray[1];
-		console.log('random array', commandArray)
-// 		TODO: remove above console.log, put a function around the switch below, then have this Random() run the switch function which will then take into account whatever is in the random.txt file.
+		spotifyIt();
 	});
 };
 
@@ -141,30 +140,37 @@ function logInput(input) {
 }
 
 // Switch function to check the command provided to then run the correct function and input.
-switch (command) {
-	case 'spotify-this-song':
+function commandSwitch() {
+
+	switch (command) {
+		case 'spotify-this-song':
 		spotifyInput()
 		spotifyIt(input);
 		logInput(input)
 		break;
-	case 'my-tweets':
+		case 'my-tweets':
 		twitterInput();
 		myTweets(input);
 		logInput(input)
 		break;
-	case 'movie-this':
+		case 'movie-this':
 		movieInput();
 		movieThis(input);
 		logInput(input)
 		break;
-	case 'do-what-it-says':
+		case 'do-what-it-says':
 		Random();
 		logInput(input)
 		break;
-	default:
+		default:
 		console.log('Please use the command options below:')
 		console.log('"spotify-this-song" <song name>');
 		console.log('"movie-this" <movie title>');
 		console.log('"my-tweets" <option: user name>');
 		console.log('"do-what-it-says"');
-};
+	};
+}
+	
+
+// Intialize command switch function.
+commandSwitch()
