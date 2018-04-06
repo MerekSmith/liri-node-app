@@ -92,7 +92,7 @@ function Random() {
 		var commandArray = data.split(',');
 		command = commandArray[0];
 		input = commandArray[1];
-		spotifyIt();
+		spotifyIt(input);
 	});
 };
 

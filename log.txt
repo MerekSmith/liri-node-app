@@ -14,3 +14,5 @@ Command: my-tweets, Input: undefined
 Command: movie-this, Input: die+hard+with+a+vengeance
 Command: spotify-this-song, Input:  mind over matter
 Command: do-what-it-says, Input: 
+Command: do-what-it-says, Input: 
+Command: do-what-it-says, Input: 
