@@ -92,7 +92,7 @@ function Random() {
 		var commandArray = data.split(',');
 		command = commandArray[0];
 		input = commandArray[1];
-		spotifyIt(input);
+		commandSwitch(command);
 	});
 };
 
@@ -140,7 +140,7 @@ function logInput(input) {
 }
 
 // Switch function to check the command provided to then run the correct function and input.
-function commandSwitch() {
+function commandSwitch(command) {
 
 	switch (command) {
 		case 'spotify-this-song':
@@ -173,4 +173,4 @@ function commandSwitch() {
 	
 
 // Intialize command switch function.
-commandSwitch()
+commandSwitch(command)

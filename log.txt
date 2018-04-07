@@ -16,3 +16,6 @@ Command: spotify-this-song, Input:  mind over matter
 Command: do-what-it-says, Input: 
 Command: do-what-it-says, Input: 
 Command: do-what-it-says, Input: 
+Command: do-what-it-says, Input: 
+Command: do-what-it-says, Input: 
+Command: spotify-this-song, Input: The Sign Ace of Base
